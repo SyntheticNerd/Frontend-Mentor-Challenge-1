@@ -24,7 +24,6 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: var(--background-secondary);
 }
@@ -32,9 +31,9 @@ body {
 .signUp-banner {
   width: 700px;
   height: 550px;
-  border-radius: 1%;
+  border-radius: 8px;
   box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
+  margin: 32px auto;
 }
 
 .top {
@@ -43,7 +42,7 @@ body {
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .bottom {
@@ -56,18 +55,21 @@ body {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .act {
   background-color: var(--brand-act);
+  border-radius: 0px 0px 0px 8px;
 }
 
 .act p {
   color: var(--text-white-primary);
 }
+
 .pass {
   background-color: var(--brand-pass);
+  border-radius: 0px 0px 8px 0px;
 }
 
 h1 {
@@ -90,11 +92,6 @@ p {
 
 .highlight {
   color: var(--brand-color);
-}
-
-footer {
-  position: absolute;
-  bottom: 0px;
 }
 
 ul {
@@ -130,6 +127,37 @@ button:hover {
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
+.content-wrapper {
+  flex-grow: 1;
+  width: fit-content;
+}
+
 .resize {
   font-size: 1rem;
+}
+
+@media (max-width: 699px) {
+  .signUp-banner {
+    width: 90%;
+    height: auto;
+    margin: 32px auto;
+  }
+  .top {
+    min-height: 50vh;
+  }
+  .bottom {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .container {
+    width: 100%;
+    height: fit-content;
+    min-height: 40vh;
+  }
+  .act {
+    border-radius: 0px;
+  }
+  .pass {
+    border-radius: 0px 0px 8px 8px;
+  }
 }
