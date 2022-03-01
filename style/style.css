@@ -42,7 +42,7 @@ body {
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .bottom {
@@ -55,7 +55,7 @@ body {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .act {
@@ -76,18 +76,21 @@ h1 {
   font-size: 1.7rem;
   color: var(--brand-act);
   letter-spacing: 2px;
+  margin: 0px 0px 16px 0px;
 }
 
 h2 {
   color: var(--text-white-primary);
   font-size: 1.3rem;
   letter-spacing: 1px;
+  margin: 0px 0px 16px 0px;
 }
 
 p {
   color: var(--text-primary);
   font-size: 1.2rem;
   line-height: 2rem;
+  margin: 0px 0px 16px 0px;
 }
 
 .highlight {
@@ -143,7 +146,7 @@ button:hover {
     margin: 32px auto;
   }
   .top {
-    min-height: 50vh;
+    min-height: 50vw;
   }
   .bottom {
     flex-direction: column;
