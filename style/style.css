@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --brand-color: #bfdf32;
+  --brand-act: #2bb3b1;
+  --brand-pass: #4abebd;
+  --background-primary: #ffffff;
+  --background-secondary: #f0f0f0;
+  --text-primary: rgba(0, 0, 0, 0.3);
+  --text-white-primary: rgba(255, 255, 255, 0.8);
+  --text-white-inactive: rgba(255, 255, 255, 0.5);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-secondary);
+}
+
+.signUp-banner {
+  width: 700px;
+  height: 550px;
+  border-radius: 1%;
+  box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.top {
+  width: 100%;
+  height: 50%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.bottom {
+  display: flex;
+  height: 50%;
+}
+
+.container {
+  padding: 2.5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.act {
+  background-color: var(--brand-act);
+}
+
+.act p {
+  color: var(--text-white-primary);
+}
+.pass {
+  background-color: var(--brand-pass);
+}
+
+h1 {
+  font-size: 1.7rem;
+  color: var(--brand-act);
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: var(--text-white-primary);
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+p {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.highlight {
+  color: var(--brand-color);
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+.standard {
+  color: var(--text-white-inactive);
+  margin: 2px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 8px;
+  color: var(--text-white-primary);
+}
+
+button {
+  border: none;
+  height: 3rem;
+  border-radius: 4px;
+  color: var(--text-white-primary);
+  background-color: var(--brand-color);
+  font-size: 1.2rem;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resize {
+  font-size: 1rem;
+}
